@@ -80,3 +80,4 @@ include __DIR__ . '/../includes/header.php';
 // 6. Inclusion du footer
 include __DIR__ . '/../includes/footer.php';
 ?>
+
