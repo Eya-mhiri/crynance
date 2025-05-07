@@ -1,0 +1,89 @@
+/* Trading Interface */
+.trading-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.trade-form {
+  background-color: var(--card-dark);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.price-display {
+  background-color: rgba(41, 98, 255, 0.1);
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1.5rem 0;
+}
+
+.price-display p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+#current-price {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+#estimated-cost {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.wallet-summary {
+  background-color: var(--card-dark);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.wallet-balance {
+  margin-bottom: 1rem;
+}
+
+.wallet-balance h3 {
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+.wallet-balance p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Trading pairs */
+.trading-pairs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pair-card {
+  background-color: #2d2d2d;
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pair-card:hover {
+  background-color: #3d3d3d;
+}
+
+.pair-card.active {
+  border: 1px solid var(--primary);
+}
+
+.pair-card h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.pair-card p {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
