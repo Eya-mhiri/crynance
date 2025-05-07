@@ -59,3 +59,7 @@ function getFlash() {
   unset($_SESSION['flash']);
   return $flash;
 }
+  <?php
+// En BAS du fichier
+require_once __DIR__ . '/../includes/footer.php'; // Footer + JS
+?>
