@@ -1,6 +1,4 @@
-/**
- * Fonctions globales pour l'application
- */
+assets/js/main.js
 
 // Gestion des notifications
 class Notifier {
