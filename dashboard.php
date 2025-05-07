@@ -1,4 +1,9 @@
 <?php
+// En HAUT du fichier
+require_once __DIR__ . '/../includes/config.php'; // Configuration DB
+require_once __DIR__ . '/../includes/header.php'; // Header HTML
+?>
+<?php
 require_once __DIR__ . '/../includes/main.php';
 require_once __DIR__ . '/../includes/auth.php';
 
