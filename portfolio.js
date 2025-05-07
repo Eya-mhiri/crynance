@@ -1,3 +1,4 @@
+assets/js/portfolio.js
 class PortfolioPage {
   static init() {
     this.loadPortfolioData();
