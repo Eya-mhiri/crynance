@@ -45,5 +45,10 @@ class User {
     $stmt->execute([$email, $password_hash]);
     
     return self::find($pdo->lastInsertId());
+  
   }
+  <?php
+// En BAS du fichier
+require_once __DIR__ . '/../includes/footer.php'; // Footer + JS
+?>
 }
