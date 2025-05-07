@@ -1,3 +1,4 @@
+assets/js/trade.js
 document.addEventListener('DOMContentLoaded', function() {
     // DOM Elements
     const cryptoSelect = document.getElementById('crypto');
