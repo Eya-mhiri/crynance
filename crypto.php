@@ -27,3 +27,7 @@ try {
   http_response_code(400);
   echo json_encode(['error' => $e->getMessage()]);
 }
+  <?php
+// En BAS du fichier
+require_once __DIR__ . '/../includes/footer.php'; // Footer + JS
+?>
