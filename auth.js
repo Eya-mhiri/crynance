@@ -1,3 +1,4 @@
+assets/js/auth.js
 class AuthForm {
   static init() {
     this.setupPasswordToggle();
