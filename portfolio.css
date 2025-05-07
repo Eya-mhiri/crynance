@@ -1,0 +1,94 @@
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--card-bg);
+}
+
+.summary-card h3 {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.summary-card .value {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.summary-card .change {
+  font-size: 0.9rem;
+}
+
+.positive {
+  color: var(--success);
+}
+
+.negative {
+  color: var(--danger);
+}
+
+.assets-list {
+  margin-top: 2rem;
+}
+
+.asset-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: var(--card-bg);
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.asset-card:hover {
+  transform: translateY(-2px);
+}
+
+.asset-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.asset-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.asset-name {
+  font-weight: 600;
+}
+
+.asset-symbol {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.asset-value {
+  text-align: right;
+}
+
+.asset-amount {
+  font-weight: 600;
+}
+
+.asset-worth {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
