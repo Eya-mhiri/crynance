@@ -120,6 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -245,3 +246,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="../assets/js/trade.js"></script>
 </body>
 </html>
+    <?php
+// En BAS du fichier
+require_once __DIR__ . '/../includes/footer.php'; // Footer + JS
+?>
