@@ -1,3 +1,4 @@
+assets/js/markets.js
 class MarketsPage {
   static init() {
     this.loadMarketData();
