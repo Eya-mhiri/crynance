@@ -1,0 +1,80 @@
+/* Dashboard spécifique */
+.dashboard-container {
+  padding: 2rem;
+}
+
+.portfolio-chart-container {
+  position: relative;
+  height: 300px;
+  margin: 1rem 0;
+}
+
+.market-data {
+  padding: 1rem;
+}
+
+.crypto-price {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.crypto-price img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.crypto-name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.positive {
+  color: var(--success);
+}
+
+.negative {
+  color: var(--danger);
+}
+
+.flash {
+  animation: flash 1s;
+}
+
+@keyframes flash {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+/* Cartes améliorées */
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  border: none;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Tableaux */
+.table {
+  width: 100%;
+  color: var(--text-color);
+}
+
+.table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
