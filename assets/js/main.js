@@ -1,4 +1,4 @@
-assets/js/main.js
+
 
 // Gestion des notifications
 class Notifier {
