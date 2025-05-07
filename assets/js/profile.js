@@ -1,4 +1,4 @@
-assets/js/profile.js
+
 class ProfilePage {
   static init() {
     this.loadProfileData();
