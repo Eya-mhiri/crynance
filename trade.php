@@ -1,11 +1,9 @@
 <?php
 // En HAUT du fichier
-require_once __DIR__ . '/../includes/config.php'; // Configuration DB
-require_once __DIR__ . '/../includes/header.php'; // Header HTML
-?>
-<?php
-require_once __DIR__ . '/../includes/db.php';
-require_once __DIR__ . '/../includes/auth.php';
+require_once _DIR_ . '/../includes/config.php'; // Configuration DB
+require_once _DIR_ . '/../includes/db.php';
+require_once _DIR_ . '/../includes/auth.php';
+require_once _DIR_ . '/../includes/header.php'; // Header HTML
 
 // Verify user is authenticated
 if (!isAuthenticated()) {
@@ -120,9 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -134,8 +130,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <?php include __DIR__ . '/../includes/header.php'; ?>
-    
     <div class="container">
         <h1>Trading Platform</h1>
         
@@ -196,11 +190,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <div class="wallet-balance">
                     <h3>BTC Balance</h3>
-                    <p><?= number_format($wallet['btc_balance'], 8) ?></p>
+                    <p><?= number_format($wallet['btc_balance'], 😎 ?></p>
                 </div>
                 <div class="wallet-balance">
                     <h3>ETH Balance</h3>
-                    <p><?= number_format($wallet['eth_balance'], 8) ?></p>
+                    <p><?= number_format($wallet['eth_balance'], 😎 ?></p>
                 </div>
                 
                 <h3 class="mt-3">Recent Transactions</h3>
@@ -220,7 +214,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <?= ucfirst($tx['transaction_type']) ?>
                                 </td>
                                 <td><?= $tx['crypto_symbol'] ?></td>
-                                <td><?= number_format($tx['amount'], 8) ?></td>
+                                <td><?= number_format($tx['amount'], 😎 ?></td>
                                 <td>$<?= number_format($tx['price'], 2) ?></td>
                             </tr>
                         <?php endforeach; ?>
@@ -240,13 +234,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
     
-    <?php include __DIR__ . '/../includes/footer.php'; ?>
-    
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/trade.js"></script>
 </body>
 </html>
-    <?php
-// En BAS du fichier
-require_once __DIR__ . '/../includes/footer.php'; // Footer + JS
-?>
